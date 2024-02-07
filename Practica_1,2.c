@@ -25,5 +25,5 @@ int main(void)
     printf("\nEl dinero convertido a dolares es de: $%.2f", dinero_dolares);
     printf("\nEl dinero convertido a euros es de: $%.2f\n", dinero_euros);
 
-
+    return 0;
 }

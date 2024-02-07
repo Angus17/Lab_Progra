@@ -22,4 +22,6 @@ int main(void)
 
     printf("\nEl area del circulo de diametro 25 : %.2f cm", area_1);
     printf("\nEl area del circulo de diametro 35 : %.2f cm\n", area_2);
+
+    return 0;
 }
