@@ -12,14 +12,22 @@ hacer uso de while.
 
 int main(void)
 {
-    int numero, i = 1, suma = 0;
+    int numero, i = 1, suma;
 
     printf("Ingresa numero entero positivo: ");
     scanf("%d", &numero);
 
-    while (i <= 102)
+    suma = numero;
+
+    while (i <= 103)
     {
-        suma += numero + i + ((i == 102) ? i - 1 : 0);
+        if (i == 103)
+        
+            suma += (i - 2);
+        
+        else
+        
+            suma += i;
 
         i += 3;
     }
