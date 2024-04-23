@@ -152,9 +152,9 @@ int main(void)
 
             } while (datos[contador].anio > anio || datos[contador].anio <= 0);
             
-            if ((datos[contador].mes == 2 && (datos[contador].dia > 29 || (datos[contador].dia == 29 && !(datos[contador].anio % 4 == 0 && (datos[contador].anio % 100 != 0 || datos[contador].anio % 400 == 0)))) ) ||
-                ((datos[contador].mes == 4 || datos[contador].mes == 6 || datos[contador].mes == 9 || datos[contador].mes == 11) && datos[contador].dia > 30) ||
-                (datos[contador].anio > anio || (datos[contador].anio == anio && (datos[contador].mes > mes || (datos[contador].mes == mes && datos[contador].dia > dia))))) 
+            if ((datos[contador].mes == 2 && (datos[contador].dia > 29 || (datos[contador].dia == 29 && !(datos[contador].anio % 4 == 0 && (datos[contador].anio % 100 != 0 || datos[contador].anio % 400 == 0)))) ) || // Año bisiesto
+                ((datos[contador].mes == 4 || datos[contador].mes == 6 || datos[contador].mes == 9 || datos[contador].mes == 11) && datos[contador].dia > 30) || // Meses con 30 dias
+                (datos[contador].anio > anio || (datos[contador].anio == anio && (datos[contador].mes > mes || (datos[contador].anio == anio && datos[contador].mes == mes && datos[contador].dia > dia))))) // Fechas futuras
             {
                 printf("La fecha no es válida. . .");
                 repetir_fecha = true;

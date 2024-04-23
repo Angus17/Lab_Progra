@@ -45,7 +45,7 @@ struct Alumnos
 
 int main(void)
 {
-    struct Alumnos *datos = (struct Alumnos *) malloc(sizeof(struct Alumnos) * 1);
+    struct Alumnos *datos = (struct Alumnos *) malloc(sizeof(struct Alumnos) * 1); 
     char respuesta_salida[3];
     bool cadena_valida = false;
     int contador = 0, i, capacidad_nueva = 0;
@@ -68,7 +68,7 @@ int main(void)
     } while (strcmp(respuesta_salida, "si") != 0 && strcmp(respuesta_salida, "no") != 0);
 
     
-    while (strcmp(respuesta_salida, "si") == 0 && contador < 5000)
+    while (strcmp(respuesta_salida, "si") == 0)
     {
         do
         {
